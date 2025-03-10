@@ -1,0 +1,15 @@
+{%extends 'base.html' %} {%block content %}
+
+<form method="POST">
+  <div class="container form-group col-md-6">
+    {{form.hidden_tag()}} {{form.email.label}} {{form.email(class =
+    'form-control', placeholder = 'Enter Email')}} <br />
+
+    {{form.password.label}} {{form.password(class = 'form-control', placeholder
+    = 'Enter Password')}} <br />
+
+    {{form.submit(class='btn btn-primary')}}
+  </div>
+</form>
+
+{%endblock%}
